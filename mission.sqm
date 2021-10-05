@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=8;
 	};
 	class Camera
 	{
-		pos[]={2237.0149,45.543861,4622.8237};
-		dir[]={-0.15273546,-0.71872884,-0.67836022};
-		up[]={-0.15788026,0.69524741,-0.70121437};
-		aside[]={-0.97560692,3.6368147e-007,0.21966395};
+		pos[]={2226.5781,14.061278,4619.749};
+		dir[]={0.81784481,-0.47146332,0.32992753};
+		up[]={0.4372265,0.88188565,0.17638196};
+		aside[]={0.37411597,1.4901161e-008,-0.92738187};
 	};
 };
 binarizationWanted=0;
-sourceName="2para_template";
+sourceName="scripts";
 addons[]=
 {
 	"UK3CB_BAF_Units_MTP",
@@ -77,13 +77,13 @@ addons[]=
 	"UK3CB_BAF_Weapons_SmallArms",
 	"CUP_Weapons_MAAWS",
 	"CUP_Weapons_M249",
+	"A3_Weapons_F_Items",
 	"UK3CB_BAF_Vehicles_LandRover",
 	"UK3CB_BAF_Weapons_Launchers",
 	"A3_Characters_F",
 	"ace_goggles",
 	"UK3CB_BAF_Equipment_Uniforms",
 	"FIR_PilotCrewPack_US",
-	"A3_Weapons_F_Items",
 	"A3_Characters_F_Orange_Facewear",
 	"UK3CB_BAF_Equipment_Berets",
 	"CUP_AirVehicles_C130J"
@@ -454,7 +454,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -699,7 +699,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -27818,7 +27818,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2220.7949,5.0294142,4632.8228};
+								position[]={2220.7949,5.0014391,4632.8228};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -28030,7 +28030,6 @@ class Mission
 							};
 							id=75;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.027975082;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28339,8 +28338,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2221.5508,5.1870871,4634.312};
-								angles[]={0,3.651351,0};
+								position[]={2221.5508,5.0014391,4634.312};
+								angles[]={-0,3.651351,0};
 							};
 							side="West";
 							flags=4;
@@ -28555,7 +28554,6 @@ class Mission
 							};
 							id=77;
 							type="CUP_B_BAF_Soldier_Survivor_MTP";
-							atlOffset=0.18564796;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28623,7 +28621,6 @@ class Mission
 					{
 					};
 					id=74;
-					atlOffset=0.027975082;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -28660,7 +28657,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2225.0811,5.022439,4630.5156};
+								position[]={2225.0811,5.0014391,4630.5156};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -28872,7 +28869,6 @@ class Mission
 							};
 							id=79;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.020999908;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28921,7 +28917,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2226.8799,5.0186396,4629.4399};
+								position[]={2226.8799,5.0014391,4629.4399};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -29145,7 +29141,6 @@ class Mission
 							};
 							id=80;
 							type="CUP_B_BAF_Soldier_Marksman_MTP";
-							atlOffset=0.01720047;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29213,7 +29208,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2228.7275,5.012763,4628.5972};
+								position[]={2228.7275,5.0014391,4628.5972};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -29456,7 +29451,6 @@ class Mission
 							};
 							id=81;
 							type="CUP_B_BAF_Soldier_Medic_MTP";
-							atlOffset=0.011323929;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29524,7 +29518,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2230.3181,5.0074391,4627.4766};
+								position[]={2230.3181,5.0014391,4627.4766};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -29723,7 +29717,6 @@ class Mission
 							};
 							id=82;
 							type="CUP_B_BAF_Soldier_AT_MTP";
-							atlOffset=0.006000042;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30003,7 +29996,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2226.1787,5.0129442,4632.3579};
+								position[]={2226.1787,5.0014391,4632.3579};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -30215,7 +30208,6 @@ class Mission
 							};
 							id=84;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.011505127;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30264,7 +30256,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2227.9775,5.0092802,4631.2827};
+								position[]={2227.9775,5.0014391,4631.2827};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -30488,7 +30480,6 @@ class Mission
 							};
 							id=85;
 							type="CUP_B_BAF_Soldier_Marksman_MTP";
-							atlOffset=0.0078411102;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30556,7 +30547,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2229.8242,5.0022707,4630.438};
+								position[]={2229.8242,5.0014391,4630.438};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -30799,7 +30790,6 @@ class Mission
 							};
 							id=86;
 							type="CUP_B_BAF_Soldier_Medic_MTP";
-							atlOffset=0.000831604;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30867,11 +30857,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2231.415,5.2571535,4629.3188};
+								position[]={2231.415,5.0141535,4629.3188};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="at1d";
@@ -31066,7 +31056,7 @@ class Mission
 							};
 							id=87;
 							type="CUP_B_BAF_Soldier_AT_MTP";
-							atlOffset=0.25571442;
+							atlOffset=0.012714386;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31115,11 +31105,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2233.1748,5.253932,4628.1899};
+								position[]={2233.1748,5.010932,4628.1899};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="lm1d";
@@ -31298,7 +31288,7 @@ class Mission
 							};
 							id=88;
 							type="CUP_B_BAF_Soldier_AutoRifleman_MTP";
-							atlOffset=0.2524929;
+							atlOffset=0.0094928741;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31347,7 +31337,6 @@ class Mission
 					{
 					};
 					id=78;
-					atlOffset=0.020999908;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31384,11 +31373,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2235.4521,5.2534399,4624.1978};
+								position[]={2235.4521,5.0104399,4624.1978};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
 								name="ic3c";
@@ -31584,6 +31573,15 @@ class Mission
 												ammoLeft=1;
 											};
 										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ToolKit";
+												count=1;
+											};
+										};
 									};
 									map="ItemMap";
 									compass="ItemCompass";
@@ -31596,7 +31594,7 @@ class Mission
 							};
 							id=90;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.25200081;
+							atlOffset=0.0090007782;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31664,7 +31662,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2237.208,5.2510977,4623.2866};
+								position[]={2237.208,5.0080976,4623.2866};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -31888,7 +31886,7 @@ class Mission
 							};
 							id=91;
 							type="CUP_B_BAF_Soldier_Marksman_MTP";
-							atlOffset=0.24965858;
+							atlOffset=0.0066585541;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31975,7 +31973,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2238.9902,5.2489996,4622.3784};
+								position[]={2238.9902,5.0059996,4622.3784};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -32218,7 +32216,7 @@ class Mission
 							};
 							id=92;
 							type="CUP_B_BAF_Soldier_Medic_MTP";
-							atlOffset=0.2475605;
+							atlOffset=0.0045604706;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32305,7 +32303,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2240.0273,5.2462797,4624.0874};
+								position[]={2240.0273,5.0032797,4624.0874};
 								angles[]={0,3.6513569,0};
 							};
 							side="West";
@@ -32488,7 +32486,7 @@ class Mission
 							};
 							id=93;
 							type="CUP_B_BAF_Soldier_AutoRifleman_MTP";
-							atlOffset=0.24484062;
+							atlOffset=0.0018405914;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32556,8 +32554,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2238.1172,5.2485399,4625.0444};
-								angles[]={0,3.6513569,0};
+								position[]={2238.1172,5.0055399,4625.0444};
+								angles[]={-0,3.6513569,0};
 							};
 							side="West";
 							flags=4;
@@ -32738,7 +32736,7 @@ class Mission
 							};
 							id=94;
 							type="CUP_B_BAF_Soldier_AA_MTP";
-							atlOffset=0.24710083;
+							atlOffset=0.0041007996;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32806,8 +32804,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2236.4014,5.2505083,4625.9897};
-								angles[]={0,3.6513569,0};
+								position[]={2236.4014,5.0075083,4625.9897};
+								angles[]={-0,3.6513569,0};
 							};
 							side="West";
 							flags=4;
@@ -32821,7 +32819,6 @@ class Mission
 									class primaryWeapon
 									{
 										name="CUP_arifle_L85A2_GL";
-										optics="RKSL_optic_LDS";
 										class primaryMuzzleMag
 										{
 											name="CUP_30Rnd_556x45_Stanag_L85_Tracer_Green";
@@ -33006,6 +33003,15 @@ class Mission
 												ammoLeft=1;
 											};
 										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ToolKit";
+												count=1;
+											};
+										};
 									};
 									map="ItemMap";
 									compass="ItemCompass";
@@ -33018,7 +33024,7 @@ class Mission
 							};
 							id=95;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.24906921;
+							atlOffset=0.0060691833;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33086,7 +33092,7 @@ class Mission
 					{
 					};
 					id=89;
-					atlOffset=0.25200081;
+					atlOffset=0.0090007782;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33123,7 +33129,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2241.957,5.2454391,4620.2578};
+								position[]={2241.957,5.002439,4620.2578};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -33301,7 +33307,7 @@ class Mission
 							};
 							id=97;
 							type="CUP_B_BAF_Soldier_Pilot_MTP";
-							atlOffset=0.24399996;
+							atlOffset=0.00099992752;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33369,7 +33375,7 @@ class Mission
 					{
 					};
 					id=96;
-					atlOffset=0.24399996;
+					atlOffset=0.00099992752;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33406,7 +33412,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2242.989,5.2434392,4622.0498};
+								position[]={2242.989,5.0014391,4622.0498};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -33584,7 +33590,6 @@ class Mission
 							};
 							id=99;
 							type="CUP_B_BAF_Soldier_Pilot_MTP";
-							atlOffset=0.2420001;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33652,7 +33657,6 @@ class Mission
 					{
 					};
 					id=98;
-					atlOffset=0.2420001;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33689,7 +33693,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2243.686,5.2444391,4619.2129};
+								position[]={2243.686,5.0014391,4619.2129};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -33867,7 +33871,6 @@ class Mission
 							};
 							id=101;
 							type="CUP_B_BAF_Soldier_Pilot_MTP";
-							atlOffset=0.24300003;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33935,7 +33938,6 @@ class Mission
 					{
 					};
 					id=100;
-					atlOffset=0.24300003;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34253,11 +34255,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2227.1211,5.2614393,4635.5947};
+								position[]={2227.1211,5.0184393,4635.5947};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
 								name="ic2c";
@@ -34465,7 +34467,7 @@ class Mission
 							};
 							id=105;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.26000023;
+							atlOffset=0.017000198;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34514,11 +34516,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2228.9189,5.259439,4634.522};
+								position[]={2228.9189,5.016439,4634.522};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="mk2c";
@@ -34738,7 +34740,7 @@ class Mission
 							};
 							id=106;
 							type="CUP_B_BAF_Soldier_Marksman_MTP";
-							atlOffset=0.2579999;
+							atlOffset=0.014999866;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34806,11 +34808,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2230.7671,5.2544389,4633.6748};
+								position[]={2230.7671,5.0114388,4633.6748};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="mc2c";
@@ -35049,7 +35051,7 @@ class Mission
 							};
 							id=107;
 							type="CUP_B_BAF_Soldier_Medic_MTP";
-							atlOffset=0.25299978;
+							atlOffset=0.009999752;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35117,11 +35119,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2232.3579,5.252439,4632.5586};
+								position[]={2232.3579,5.009439,4632.5586};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="at2c";
@@ -35316,7 +35318,7 @@ class Mission
 							};
 							id=108;
 							type="CUP_B_BAF_Soldier_AT_MTP";
-							atlOffset=0.25099993;
+							atlOffset=0.007999897;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35365,7 +35367,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2234.1169,5.2504392,4631.4268};
+								position[]={2234.1169,5.0074391,4631.4268};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -35548,7 +35550,7 @@ class Mission
 							};
 							id=109;
 							type="CUP_B_BAF_Soldier_AutoRifleman_MTP";
-							atlOffset=0.24900007;
+							atlOffset=0.006000042;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35597,11 +35599,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2228.219,5.2554393,4637.436};
+								position[]={2228.219,5.0124393,4637.436};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="ic2d";
@@ -35809,7 +35811,7 @@ class Mission
 							};
 							id=110;
 							type="CUP_B_BAF_Soldier_SquadLeader_MTP";
-							atlOffset=0.25400019;
+							atlOffset=0.011000156;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35858,11 +35860,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2230.0171,5.2534389,4636.3628};
+								position[]={2230.0171,5.0104389,4636.3628};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="mk2d";
@@ -36082,7 +36084,7 @@ class Mission
 							};
 							id=111;
 							type="CUP_B_BAF_Soldier_Marksman_MTP";
-							atlOffset=0.25199986;
+							atlOffset=0.0089998245;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36150,11 +36152,11 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2231.863,5.2514391,4635.519};
+								position[]={2231.863,5.0084391,4635.519};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
-							flags=1;
+							flags=5;
 							class Attributes
 							{
 								name="mc2d";
@@ -36393,7 +36395,7 @@ class Mission
 							};
 							id=112;
 							type="CUP_B_BAF_Soldier_Medic_MTP";
-							atlOffset=0.25;
+							atlOffset=0.0069999695;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36708,7 +36710,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2235.2141,5.2474389,4633.27};
+								position[]={2235.2141,5.0044389,4633.27};
 								angles[]={0,3.651351,0};
 							};
 							side="West";
@@ -36891,7 +36893,7 @@ class Mission
 							};
 							id=114;
 							type="CUP_B_BAF_Soldier_AutoRifleman_MTP";
-							atlOffset=0.24599981;
+							atlOffset=0.0029997826;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36940,7 +36942,7 @@ class Mission
 					{
 					};
 					id=104;
-					atlOffset=0.26000023;
+					atlOffset=0.017000198;
 					class CustomAttributes
 					{
 						class Attribute0

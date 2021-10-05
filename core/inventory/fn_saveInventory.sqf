@@ -1,3 +1,4 @@
+
 /*-----------
 Script: fn_saveInventory
 Description: Save player inventory and return an array
