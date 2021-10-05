@@ -1,3 +1,10 @@
+
+/*-----------
+Script: fn_saveInventory
+Description: Save player inventory and return an array
+Author: BlackHat
+-----------*/
+
 params [ "_unit", "_inventory" ];
 
 _inventory = [
