@@ -1,3 +1,8 @@
+/*-----------
+Script: fn_updateTrackingList
+Description: Subscribes all groups with players on blufor side to the list. Creates markers for each group. This is run every time a player connects and disconnects.
+Author: BlackHat
+-----------*/
 
 bftTrackingGroups = [];
 
