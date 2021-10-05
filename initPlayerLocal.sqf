@@ -57,8 +57,6 @@ player addEventHandler["Respawn", {
 	if(true) then {
 		[player, loadout] call PARA_fnc_loadInventory;
 	};
-	_text = name player;
-	player setVariable ["squadname",_text,TRUE];
 }];
 
 []spawn{
