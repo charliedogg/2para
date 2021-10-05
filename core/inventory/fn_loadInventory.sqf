@@ -1,3 +1,9 @@
+/*-----------
+Script: fn_loadInventory
+Description: Loads inventory from given _inventory array
+Author: BlackHat
+-----------*/
+
 params [ "_unit", "_inventory" ];
 
 removeAllAssignedItems _unit;
