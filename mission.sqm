@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={2237.0149,45.543861,4622.8237};
-		dir[]={-0.15273546,-0.71872884,-0.67836022};
-		up[]={-0.15788026,0.69524741,-0.70121437};
-		aside[]={-0.97560692,3.6368147e-007,0.21966395};
+		pos[]={2247.8237,78.421448,4668.4365};
+		dir[]={-0.29134318,-0.73096383,-0.61710984};
+		up[]={-0.31207079,0.68240249,-0.66101509};
+		aside[]={-0.90429521,-1.8603168e-007,0.4269264};
 	};
 };
 binarizationWanted=0;
-sourceName="2para_template";
+sourceName="2para_template_edited";
 addons[]=
 {
 	"UK3CB_BAF_Units_MTP",
