@@ -1,3 +1,9 @@
+/*-----------
+Script: fn_trackGroups
+Description: Tracks subscribed groups from the mission every 2.5 seconds
+Author: BlackHat
+-----------*/
+
 bftRunning = true;
 
 while {bftRunning} do {
