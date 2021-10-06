@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=9;
 	};
 	class Camera
 	{
-		pos[]={2226.5781,14.061278,4619.749};
-		dir[]={0.81784481,-0.47146332,0.32992753};
-		up[]={0.4372265,0.88188565,0.17638196};
-		aside[]={0.37411597,1.4901161e-008,-0.92738187};
+		pos[]={2213.1633,11.781057,4635.7065};
+		dir[]={0.94359028,-0.32604563,-0.057815619};
+		up[]={0.32543808,0.94535244,-0.019940607};
+		aside[]={-0.061157782,-1.8764331e-007,-0.99813199};
 	};
 };
 binarizationWanted=0;
@@ -69,6 +69,7 @@ addons[]=
 	"ace_maptools",
 	"ace_flashlights",
 	"ace_kestrel4500",
+	"ace_microdagr",
 	"CUP_Weapons_L129",
 	"RKSL_PMII",
 	"3CB_ACE_Compat_GRM",
@@ -92,7 +93,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			className="UK3CB_BAF_Units_MTP";
@@ -334,99 +335,106 @@ class AddonsMetaData
 		};
 		class Item38
 		{
+			className="ace_microdagr";
+			name="ACE3 - MicroDAGR";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item39
+		{
 			className="CUP_Weapons_L129";
 			name="CUP_Weapons_L129";
 		};
-		class Item39
+		class Item40
 		{
 			className="RKSL_PMII";
 			name="RKSL_PMII";
 			author="RKSL Studios";
 		};
-		class Item40
+		class Item41
 		{
 			className="3CB_ACE_Compat_GRM";
 			name="3CB Weapons ACE3 Compatibility";
 			author="UK3CB Team & JK";
 		};
-		class Item41
+		class Item42
 		{
 			className="CUP_Weapons_West_Attachments";
 			name="CUP_Weapons_West_Attachments";
 		};
-		class Item42
+		class Item43
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item44
 		{
 			className="UK3CB_BAF_Weapons_SmallArms";
 			name="3CB BAF Weapons - Small Arms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="CUP_Weapons_MAAWS";
 			name="CUP_Weapons_MAAWS";
 		};
-		class Item45
+		class Item46
 		{
 			className="CUP_Weapons_M249";
 			name="CUP_Weapons_M249";
 			author="Community Upgrade Project";
 		};
-		class Item46
+		class Item47
 		{
 			className="UK3CB_BAF_Vehicles_LandRover";
 			name="3CB BAF Vehicles - Land Rover";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item47
+		class Item48
 		{
 			className="UK3CB_BAF_Weapons_Launchers";
 			name="3CB BAF Weapons - Launchers";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item50
 		{
 			className="UK3CB_BAF_Equipment_Uniforms";
 			name="3CB BAF Equipment - Uniforms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item50
+		class Item51
 		{
 			className="FIR_PilotCrewPack_US";
 			name="FIR_PilotCrewPack_US";
 		};
-		class Item51
+		class Item52
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item53
 		{
 			className="UK3CB_BAF_Equipment_Berets";
 			name="3CB BAF Equipment - Berets";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item53
+		class Item54
 		{
 			className="CUP_AirVehicles_C130J";
 			name="CUP_AirVehicles_C130J";
@@ -28339,7 +28347,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2221.5508,5.0014391,4634.312};
-								angles[]={-0,3.651351,0};
+								angles[]={0,3.651351,0};
 							};
 							side="West";
 							flags=4;
@@ -28473,7 +28481,7 @@ class Mission
 										};
 										class ItemCargo
 										{
-											items=8;
+											items=9;
 											class Item0
 											{
 												name="ACE_epinephrine";
@@ -28512,6 +28520,11 @@ class Mission
 											class Item7
 											{
 												name="ACE_Kestrel4500";
+												count=1;
+											};
+											class Item8
+											{
+												name="ACE_microDAGR";
 												count=1;
 											};
 										};
@@ -32555,7 +32568,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2238.1172,5.0055399,4625.0444};
-								angles[]={-0,3.6513569,0};
+								angles[]={0,3.6513569,0};
 							};
 							side="West";
 							flags=4;
@@ -32805,7 +32818,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2236.4014,5.0075083,4625.9897};
-								angles[]={-0,3.6513569,0};
+								angles[]={0,3.6513569,0};
 							};
 							side="West";
 							flags=4;
