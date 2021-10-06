@@ -1,8 +1,3 @@
-/*-----------
-Script: fn_updateTrackingList
-Description: Subscribes all groups with players on blufor side to the list. Creates markers for each group. This is run every time a player connects and disconnects.
-Author: BlackHat, Shepard
------------*/
 
 bftTrackingGroups = [];
 
@@ -18,7 +13,7 @@ bftTrackingGroups = [];
 	
 	if(((side _x) == West) && _hasPlayerLeader) then {
 		_squadleader = leader _x;
-		_squadname = _squadleader getVariable "squadname";
+		_squadname = (_squadleader getVariable "squadname");
 		groupIDname = groupID _x; 
 		if (isNil "_squadname") then {
 			markerText1 = groupIDname;

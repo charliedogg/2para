@@ -1,8 +1,3 @@
-/*-----------
-Script: fn_initGroups
-Description: Initializes groups for BFT
-Author: BlackHat
------------*/
 
 {
 	

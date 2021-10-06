@@ -1,12 +1,6 @@
 disabledAI = 1;
 
-author			= "BlackHat";
-onLoadName		= "2Para Mission Template";
-onLoadMission	= "Create a template of the units in this mission and the scripts to create your own mission!";
-
-respawn=3;
-respawnDelay=2;
-respawnOnStart=-1;
+respawnOnStart = 0;
 
 class CfgFunctions
 {
@@ -17,11 +11,6 @@ class CfgFunctions
 	        class updateTrackingList {};
 			class trackGroups {};
 			class initGroups {};
-	    };
-		class inventory {
-	        file = "core\inventory";
-	        class loadInventory {};
-			class saveInventory {};
 	    };
 		
 	};

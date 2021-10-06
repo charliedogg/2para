@@ -1,11 +1,10 @@
 SHP_fnc_openSquadnameSet = {
 	params ["_charArray"];
 	_char = _charArray select 1;
-	if (_char == 47) then {
+	if (_char == 42) then {
 		call SHP_fnc_setSquadname;
 	};
 };
-
 
 SHP_fnc_setSquadname = {
 
@@ -39,6 +38,7 @@ SHP_fnc_setSquadname = {
 			_playerUnit = player;
 			[_playerUnit,["squadname",_text,TRUE]] remoteExec ["setVariable", 2];
 			_display closeDisplay 1;
+			[[], PARA_fnc_updateTrackingList] remoteExec ["call", 2];
 		}];
 
 	ctrlSetFocus _ctrlEdit;
@@ -46,17 +46,73 @@ SHP_fnc_setSquadname = {
 	_ctrlGroup ctrlCommit 0.1;
 };
 
+SHP_fnc_addCarMarker = {
+	params ["_unit","_role","_vehicle"];
+	if (_role == "driver") then{
+		_markerCheck = _vehicle getVariable "bft_marker_car";
+		if (isNil "_markerCheck") then{
+			_markerText1 = _unit getVariable "squadname";
+			_markerName = _markerText1;
+			if (_markerText1 == "") then{
+				_markerText1 = (name _unit + " vehicle");
+				_markerName = _markerText1;
+			};
+			_marker = createMarker [_markerText1, getPos (_vehicle)];
+			_markerText1 setMarkerType "b_mech_inf";
+			_markerText1 setMarkerText _markerName;
+			_markerText1 setMarkerColor "colorBLUFOR";
+			_markerText1 setMarkerAlpha 1;
+			_vehicle setVariable ["bft_marker_car", _markerText1];
+			_oldTrackingCars = missionNamespace getVariable "trackingCars";
+			_oldTrackingCars pushBack _vehicle;
+			missionNamespace setVariable ["trackingCars",_oldTrackingCars,true];
+		}else{
+			if (_markerCheck isEqualTo "") then{
+				_markerText1 = _unit getVariable "squadname";
+			_markerName = _markerText1;
+			if (_markerText1 == "") then{
+				_markerText1 = (name _unit + " vehicle");
+				_markerName = _markerText1;
+			};
+			_marker = createMarker [_markerText1, getPos (_vehicle)];
+			_markerText1 setMarkerType "b_mech_inf";
+			_markerText1 setMarkerText _markerName;
+			_markerText1 setMarkerColor "colorBLUFOR";
+			_markerText1 setMarkerAlpha 1;
+			_vehicle setVariable ["bft_marker_car", _markerText1];
+			_oldTrackingCars = missionNamespace getVariable "trackingCars";
+			_oldTrackingCars pushBack _vehicle;
+			missionNamespace setVariable ["trackingCars",_oldTrackingCars,true];
+			};
+		};
+	};	
+};
+
+SHP_fnc_removeCarMarker = {
+	params ["_unit","_role","_vehicle"];
+	
+	
+	if (count (crew _vehicle) == 0) then{
+	
+		_marker = _vehicle getVariable "bft_marker_car";
+		deleteMarker (_marker);
+		_vehicle setVariable ["bft_marker_car",""];
+	};
+
+};
+
 
 waitUntil { !isNull player && alive player };
 
-loadout = [player] call PARA_fnc_saveInventory;
 
+player addEventHandler["GetInMan", {
+	params ["_unit", "_role", "_vehicle", "_turret"];
+	[[_unit,_role,_vehicle],SHP_fnc_addCarMarker] remoteExec["call",2];
+}];
 
-player addEventHandler["Respawn", {
-	
-	if(true) then {
-		[player, loadout] call PARA_fnc_loadInventory;
-	};
+player addEventHandler["GetOutMan", {
+	params ["_unit", "_role", "_vehicle", "_turret"];
+	[[_unit,_role,_vehicle],SHP_fnc_removeCarMarker] remoteExec["call",2];
 }];
 
 []spawn{
@@ -66,3 +122,8 @@ player addEventHandler["Respawn", {
 
 _playerUnit = player;
 [_playerUnit,["squadname","",TRUE]] remoteExec ["setVariable", 2];
+
+[allPlayers, [player]] call ace_spectator_fnc_updateUnits;
+[[west], [east,civilian]] call ace_spectator_fnc_updateSides;
+[[1,2],[0]] call ace_spectator_fnc_updateCameraModes;
+[[-2,-1],[0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes;

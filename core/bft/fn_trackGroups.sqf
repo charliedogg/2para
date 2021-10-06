@@ -1,9 +1,3 @@
-/*-----------
-Script: fn_trackGroups
-Description: Tracks subscribed groups from the mission every 2.5 seconds
-Author: BlackHat
------------*/
-
 bftRunning = true;
 
 while {bftRunning} do {
@@ -21,7 +15,21 @@ while {bftRunning} do {
 		};
 
 	} forEach _groups;
+	sleep 2.5;
+};
+
+while {true} do {
+
+	_cars = missionNamespace getVariable ["trackingCars",[]];
+	
+	{
+	
+		_marker = _x getVariable "bft_marker_car";
+		hint str _x;
+		_marker setMarkerPos (getPos _x);
+	
+	} forEach _cars;
 	
 	sleep 2.5;
-	
+
 };
